@@ -1,5 +1,7 @@
 public class Initials {
+
     private String name;
+
     public void displayInitials(String name)
     {
         String [] nameComponent = name.split(" ");

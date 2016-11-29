@@ -1,6 +1,7 @@
 import javax.swing.JOptionPane;
 
 public class InchesToFeetInteractive {
+
     public static void main(String[] args)
     {
         String input;
@@ -12,12 +13,14 @@ public class InchesToFeetInteractive {
         int remaindingInches = remainderFromConvertingInchesToFeet(inches);
         JOptionPane.showMessageDialog(null,inches + " inches is " + feet + " feet and " + remaindingInches + " inches.");
     }
+
     public static int convertInchesToFeet(int inches)
     {
         int feetconversion = inches/12;
         return feetconversion;
     }
-    public static int remainderFromConvertingInchesToFeet(int inches)
+
+     static int remainderFromConvertingInchesToFeet(int inches)
     {
         int remainedInches = inches%12;
         return remainedInches;

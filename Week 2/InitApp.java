@@ -1,4 +1,5 @@
 public class InitApp {
+
     public static void main (String[] args)
     {
         Initials in = new Initials();
