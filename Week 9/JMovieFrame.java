@@ -10,10 +10,6 @@ public class JMovieFrame extends JFrame implements ActionListener
     JButton eastButton = new JButton("The East");
     JButton westButton = new JButton("West Coast");
     JButton southButton = new JButton("South Pacific");
-    JLabel northLabel = new JLabel("");
-    JLabel eastLabel = new JLabel("");
-    JLabel westLabel = new JLabel();
-    JLabel southLabel = new JLabel();
     JLabel centerLabel = new JLabel("");
 
     public JMovieFrame()
@@ -60,8 +56,7 @@ public class JMovieFrame extends JFrame implements ActionListener
 
                         centerLabel.setText("1958, Joshua Logan");
                     }
-        invalidate();
-        validate();
+
     }
 
     public static void main(String[] args)

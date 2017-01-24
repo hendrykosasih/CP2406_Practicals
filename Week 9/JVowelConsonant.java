@@ -12,6 +12,7 @@ public class JVowelConsonant extends JFrame implements ActionListener
     JPanel panel2 = new JPanel();
     JLabel content = new JLabel("");
 
+
     int x;
     int random;
     int[] rans = {-1, -1, -1, -1, -1, -1, -1, -1};
@@ -38,6 +39,10 @@ public class JVowelConsonant extends JFrame implements ActionListener
         add(content);
         for(x = 0; x < LETTERS_AT_A_TIME; ++x)
             b[x].addActionListener(this);
+
+        Font myFont = new Font("Serif", Font.ITALIC | Font.BOLD, 12);
+        Font newFont = myFont.deriveFont(20F);
+        content.setFont(newFont);
     }
     @Override
     public void actionPerformed(ActionEvent e)
@@ -59,8 +64,10 @@ public class JVowelConsonant extends JFrame implements ActionListener
     }
     public static void main(String[] ags)
     {
-        JVowelConsonant f = new JVowelConsonant();
-        f.setSize(500, 110);
-        f.setVisible(true);
+        JVowelConsonant JFrame = new JVowelConsonant();
+        JFrame.setSize(500, 110);
+        JFrame.setVisible(true);
+        JFrame.setResizable(false);
+        JFrame.setLocationRelativeTo(null);
     }
 }
