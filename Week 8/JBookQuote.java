@@ -10,9 +10,9 @@ public class JBookQuote {
 
         bookquote2.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         bookquote2.setLocationRelativeTo(null);
-        JLabel book1quote = new JLabel("Hasta la vista");
+        JLabel book1quote = new JLabel("Key to Success");
         book1quote.setHorizontalAlignment(JLabel.CENTER);
-        JLabel book2quote = new JLabel("Adios");
+        JLabel book2quote = new JLabel("No matter what");
         book2quote.setHorizontalAlignment(JLabel.CENTER);
         listOfQuote.add(book1quote);
         listOfQuote.add(book2quote);

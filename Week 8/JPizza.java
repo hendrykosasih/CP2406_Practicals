@@ -15,7 +15,7 @@ public class JPizza {
         String[] pizzaSize = {"Small ($7)", "Medium ($9)", "Large($11)", "Extra large ($14)"};
         JComboBox pizzaSizeChoice = new JComboBox(pizzaSize);
         content.add(pizzaSizeChoice);
-        String[] toppingChoice = {"Cheese","Pepperoni (Additional $1)", "Mushroom (Additional $1)", "Bacon (Additional $1)", "Crabstick(Additional $1)"};
+        String[] toppingChoice = {"Cheese","Pepperoni (Add $1)", "Mushroom (Add $1)", "Bacon (Add $1)", "Crabstick(Add $1)"};
         JComboBox pizzaToppingChoice = new JComboBox(toppingChoice);
         content.add(pizzaToppingChoice);
         JButton buy = new JButton("Buy");
@@ -52,7 +52,7 @@ public class JPizza {
                     toppingPrice = 1;
                 }
                 int totalPrice = pizzaPrice+toppingPrice;
-                JOptionPane.showMessageDialog(buy,"Your choice is " + choice + " with " +
+                JOptionPane.showMessageDialog(buy,"You have choosen " + choice + " with " +
                         pizzaToppingChoice.getSelectedItem().toString()+"\nTotal Price is: $" + totalPrice);
             }
         });
